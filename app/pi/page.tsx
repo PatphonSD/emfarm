@@ -1,16 +1,28 @@
 import Container from "@/components/container";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { buttonVariants } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { DashboardIcon, PinTopIcon } from "@radix-ui/react-icons";
+import clsx from "clsx";
+import Link from "next/link";
 
 export default function PersonalInformation() {
   return (
     <main>
       <div className="bg-neutral-900 text-white">
-        <Container>
-          <p className="text-xl text-muted-foreground">Personal Information</p>
-          <p className="text-5xl md:text-7xl font-medium">นายพัชรพล ศรีดา</p>
-          <p className="text-xl text-muted-foreground">นักเรียน</p>
+        <Container className="flex flex-col md:flex-row gap-8 justify-between md:items-center">
+          <div className="space-y-4">
+            <p className="text-xl text-muted-foreground">
+              Personal Information
+            </p>
+            <p className="text-5xl md:text-7xl font-medium">นายพัชรพล ศรีดา</p>
+          </div>
+          <Link
+            href={"/resume.pdf"}
+            className={clsx(buttonVariants({ variant: "secondary" }), "w-fit")}
+          >
+            ดาวน์โหลด Resume
+          </Link>
         </Container>
       </div>
       <Container className="flex flex-col gap-4 md:flex-row">
@@ -53,23 +65,14 @@ export default function PersonalInformation() {
         <Separator orientation="vertical" />
         <div className="w-full space-y-4">
           <p>
-            สวัสดีครับทุกท่าน ผมชื่อพัชรพล นักเรียนระดับประกาศนียบัตรวิชาชีพ
-            สาขาวิชาไฟฟ้ากำลัง
-            สนใจด้านการเขียนโค้ดเพื่อพัฒนาซอฟต์แวร์และแอปพลิเคชันต่างๆ
-            มองว่าการเขียนโค้ดเป็นทักษะที่จำเป็นสำหรับยุคดิจิทัล
-            จึงตั้งใจที่จะพัฒนาทักษะนี้ให้เก่งยิ่งขึ้น
-            ผมเข้าใจว่าการเขียนโค้ดเป็นทักษะที่ท้าทายและซับซ้อน
-            แต่ผมพร้อมที่จะเรียนรู้และเผชิญความท้าทายต่างๆ เพื่อพัฒนาตัวเอง
-            ผมเชื่อว่าการเรียนรู้อย่างต่อเนื่องเป็นสิ่งสำคัญที่จะทำให้เราเติบโตและก้าวหน้าในอาชีพ
-            ด้วยพลังแห่งความมุ่งมั่น ผมสัญญาว่าจะไม่หยุดพัฒนาตัวเอง
-            ไม่ว่าจะเป็นการเรียนรู้เกี่ยวกับภาษาโปรแกรม การอ่านและเข้าใจโค้ด
-            ไปจนถึงการเรียนรู้เกี่ยวกับเทคโนโลยีและแนวโน้มใหม่ๆ ในวงการซอฟต์แวร์
-            ผมจะทำทุกอย่างเพื่อให้ตัวเองก้าวข้ามขีดจำกัดและเติบโตเป็นนักพัฒนาซอฟต์แวร์ที่มีคุณภาพ
-            ถึงแม้ว่าผมจะยังไม่เก่งมากในขณะนี้
-            แต่ผมก็มุ่งมั่นที่จะพัฒนาความสามารถของตัวเองในทุกๆ วัน
-            ขอบคุณทุกคนที่ให้การสนับสนุนและกำลังใจในการเรียนรู้ของผม
-            หากมีคำแนะนำหรือคำปรึกษาใดๆ อยากจะแบ่งปัน
-            ผมยินดีที่จะฟังและพูดคุยครับ
+            ตามความคิดของผม
+            สิ่งที่ครองโลกในปัจจุบันและในอนาคตคือเทคโนโลยีและแนวคิดที่นำไปสู่นวัตกรรมต่าง
+            ๆ ไม่ว่าจะเป็นที่ไหนหรือทำอะไร เราก็ต้องพึ่งพาบนสิ่งเหล่านี้ทั้งหมด
+            เช่นเครื่องใช้ไฟฟ้า, ยานยนต์, อุปกรณ์สื่อสาร, และอื่นๆอีกมากมาย
+            สิ่งต่างๆในทุกวันนี้ล้วนถูกสร้างขึ้นจากการพัฒนาที่ต่อเนื่องจากแนวคิดที่เป็นนวัตกรรม
+            เพื่อให้การใช้งานเป็นไปอย่างสะดวกสบาย เข้าถึงได้ทุกที่และปลอดภัย
+            ผมมองว่าสิ่งที่สำคัญในการสร้างนวัตกรรมเหล่านี้คือศาสตร์ของไฟฟ้าและการพัฒนาซอฟต์แวร์
+            ดังนั้นผมมุ่งมั่นที่จะเรียนรู้และเข้าใจทั้งศาสตร์ของไฟฟ้ากำลังและการพัฒนาซอฟต์แวร์นั่นเองครับ
           </p>
           <h2 className="text-2xl py-4 font-medium">ประวัติการศึกษา</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

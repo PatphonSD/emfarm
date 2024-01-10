@@ -3,6 +3,8 @@ import { Noto_Sans_Thai } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/navbar'
 import clsx from 'clsx'
+import { Suspense } from 'react'
+import Loading from './loading'
 
 const noto = Noto_Sans_Thai({ subsets: ['latin'] })
 
@@ -18,10 +20,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Suspense fallback={<Loading />}>
       <body className={noto.className}>
         <Navbar/>
         {children}
       </body>
+      </Suspense>
     </html>
   )
 }

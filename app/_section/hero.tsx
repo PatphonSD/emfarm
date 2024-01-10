@@ -32,7 +32,9 @@ export default function Hero() {
               GitHub
             </Link>
             <Link
-              href={"https://www.facebook.com/profile.php?id=100075414066608&mibextid=ZbWKwL"}
+              href={
+                "https://www.facebook.com/profile.php?id=100075414066608&mibextid=ZbWKwL"
+              }
               className="border shadow-sm hover:shadow-lg transition-all rounded-full px-4 py-1 font-medium"
             >
               Facebook
@@ -49,24 +51,34 @@ export default function Hero() {
 
 const HeroMock = () => (
   <div className="grid grid-cols-1 gap-2">
-        <div className="bg-blue-950 rounded-3xl object-bottom object-cover h-36 md:h-52 w-full">
-      <Image className="rounded-3xl object-bottom object-cover h-full" src={Mock04} alt="dnewuifhn" />
+    <div className="bg-blue-950 rounded-2xl object-bottom object-cover h-36 md:h-52 w-full">
+      <Image
+        loading="eager"
+        className="rounded-2xl object-bottom object-cover h-full"
+        src={Mock04}
+        alt="dnewuifhn"
+      />
     </div>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-    <div className="bg-red-950 rounded-3xl h-36 md:h-52 w-full overflow-hidden">
-      <Image src={Mock01} alt="dnewuifhn" />
-    </div>    <div className="bg-orange-950 rounded-3xl h-36 md:h-52 w-full overflow-hidden">
-      <Image src={Mock03} alt="dnewuifhn" />
-    </div>
+      <div className="bg-red-950 rounded-2xl h-36 md:h-52 w-full overflow-hidden">
+        <Image loading="eager" src={Mock01} alt="dnewuifhn" />
+      </div>
+      <div className="bg-orange-950 rounded-2xl h-36 md:h-52 w-full overflow-hidden">
+        <Image loading="eager" src={Mock03} alt="dnewuifhn" />
+      </div>
     </div>
     <div className="flex gap-2">
-      <div className="bg-green-950 rounded-3xl h-36 md:h-52 aspect-square overflow-hidden">
-        <Image src={Mock05} className="h-full object-cover w-auto" alt="dnewuifhn" />
+      <div className="bg-green-950 rounded-2xl h-36 md:h-52 aspect-square w-auto overflow-hidden">
+        <Image
+          loading="eager"
+          src={Mock05}
+          className="h-full aspect-square object-cover w-auto"
+          alt="dnewuifhn"
+        />
       </div>
-      <div className="bg-violet-950 rounded-3xl h-36 md:h-52 w-full overflow-hidden">
-        <Image src={Mock02} alt="dnewuifhn" />
+      <div className="bg-violet-950 rounded-2xl h-36 flex-1 md:h-52 w-full overflow-hidden">
+        <Image loading="eager" className="h-full object-cover" src={Mock02} alt="dnewuifhn" />
       </div>
     </div>
-
   </div>
 );
