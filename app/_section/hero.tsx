@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <section>
       <Container className="flex flex-col md:flex-row gap-16">
-        <p className="text-5xl mb-0 pb-0 text-neutral-900 lg:text-8xl font-medium text-nowrap leading-tight lg:leading-tight">
+        <p className="text-4xl mb-0 pb-0 text-neutral-900 lg:text-8xl font-medium text-nowrap leading-tight lg:leading-tight">
           สวัสดี!
           <br />
           ผมชื่อพัชรพล ศรีดา
