@@ -38,7 +38,7 @@ export default function FAQ() {
       <Accordion defaultValue={FaqData[0].topic} onValueChange={e=>setMainTitle(e)} type="single" collapsible>
         {FaqData.map((item, idx) => (
           <AccordionItem key={idx} value={item.topic}>
-            <AccordionTrigger className="text-xl font-semibold">
+            <AccordionTrigger className="text-xl text-start font-semibold">
               {item.topic}
             </AccordionTrigger>
             <AccordionContent className="text-lg">
