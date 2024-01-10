@@ -32,7 +32,7 @@ export default function Hero() {
               GitHub
             </Link>
             <Link
-              href={"https://github.com/PatphonSD"}
+              href={"https://www.facebook.com/profile.php?id=100075414066608&mibextid=ZbWKwL"}
               className="border shadow-sm hover:shadow-lg transition-all rounded-full px-4 py-1 font-medium"
             >
               Facebook
