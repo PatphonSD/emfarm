@@ -2,9 +2,14 @@ import Container from "@/components/container";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { buttonVariants } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { DashboardIcon, PinTopIcon } from "@radix-ui/react-icons";
+import { DashboardIcon } from "@radix-ui/react-icons";
 import clsx from "clsx";
+import Image from "next/image";
 import Link from "next/link";
+
+import RINT213225650042 from "./certificate/RINT213225650042-1.png";
+import RINT220525650089 from "./certificate/RINT220525650089-1.png";
+import RINT230025650177 from "./certificate/RINT230025650177-1.png";
 
 export default function PersonalInformation() {
   return (
@@ -132,6 +137,13 @@ export default function PersonalInformation() {
               ชุดออกแบบระบบระบายความร้อนใต้หลังคาเพื่อลดพลังงานไฟฟ้า
             </p>
             <p>- ชนะเลิศเหรียญทองระดับ อศจ.</p>
+          </div>
+          <h2 className="text-2xl py-4 font-medium">เกียรติบัตร</h2>
+          <div className="grid relative grid-cols-1 gap-4 md:grid-cols-2">
+            <div className="w-full h-full absolute z-20" />
+            <Image alt="RINT213225650042" src={RINT213225650042} />
+            <Image alt="RINT220525650089" src={RINT220525650089} />
+            <Image alt="RINT230025650177" src={RINT230025650177} />
           </div>
         </div>
       </Container>
