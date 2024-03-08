@@ -4,19 +4,14 @@ import { product } from "@/constant/product";
 import {
   ArrowTopRightIcon,
   DashboardIcon,
-  Link1Icon,
 } from "@radix-ui/react-icons";
 import Link from "next/link";
+import Hero from "./hero";
 
 export default function Product() {
   return (
     <main className="flex flex-col gap-8">
-      <div className="bg-neutral-900 rounded-2xl relative text-white">
-        <Container className="z-10 h-full flex items-center absolute">
-          <h1 className="text-3xl md:text-5xl font-medium">ผลิตภัณฑ์ของผม</h1>
-        </Container>
-        <img className="rounded-b-2xl" src="/cover.png" />
-      </div>
+      <Hero/>
       <Container asSub>
         <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {product.map((item, idx) => (

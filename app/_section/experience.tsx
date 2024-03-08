@@ -38,7 +38,7 @@ const tools = [
   {
     success: true,
     name: "ระบบลงเวลาสำหรับบุคลากร",
-    description: "แอพพลิเคชั่นบริการนักเรียนและผู้ปกครอง",
+    description: "ระบบลงเวลาสำหรับบุคลากร",
     link: "",
     image: null,
     avatar: "/stc.jpg",
@@ -82,10 +82,10 @@ export default function Experience() {
             <div>
               {
                 item.image ? <img
-                className="rounded-t-lg aspect-video object-cover"
+                className="rounded-t-lg aspect-[2.23] object-cover"
                 alt={item.name}
                 src={item.image}
-              /> : <div className="rounded-t-lg bg-gradient-to-r from-violet-600 to-indigo-600 aspect-video object-cover"/>
+              /> : <div className="rounded-t-lg bg-gradient-to-r from-violet-600 to-indigo-600 aspect-[2.23] object-cover"/>
               }
             </div>
             <div className="flex justify-between px-4">

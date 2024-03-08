@@ -24,19 +24,19 @@ const tools = [
   {
     name: "C/C++",
     type: "programming language",
-    link: "https://typescriptlang.org",
+    link: "https://cplusplus.com/",
     image: "/cpp.svg",
   },
   {
     name: "NodeJS",
     type: "JavaScript Runtime",
-    link: "https://typescriptlang.org",
+    link: "https://nodejs.org/en",
     image: "/nodejs.svg",
   },
   {
     name: "PNPM",
     type: "package manager",
-    link: "https://typescriptlang.org",
+    link: "https://pnpm.io/",
     image: "/pnpm.png",
   },
   {
@@ -54,7 +54,7 @@ const tools = [
   {
     name: "NextAuth.js",
     type: "Authentication libray",
-    link: "https://shadcn.com/ui",
+    link: "https://next-auth.js.org/",
     image: "/next-auth.png",
   },
 ];
@@ -76,7 +76,7 @@ export default function FavoriteTools() {
             </div>
             <div>
               <Image
-              className="h-16 rounded-lg w-auto"
+                className="h-16 rounded-lg w-auto"
                 alt={item.name}
                 src={item.image}
                 width={128}
