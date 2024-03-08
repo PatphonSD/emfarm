@@ -34,6 +34,7 @@ export default function Navbar() {
             <Link
               className={clsx(buttonVariants({ variant: "ghost" }))}
               href={item.link}
+              key={idx}
             >
               {item.name}
             </Link>
