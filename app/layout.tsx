@@ -9,8 +9,8 @@ import Loading from "./loading";
 const noto = Noto_Sans_Thai({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'emfarm - พัฒนาซอฟต์แวร์ทันสมัยและมีประสิทธิภาพสูง',
-  description: 'emfarm พัฒนาซอฟต์แวร์และ SaaS ที่ทันสมัยและมีประสิทธิภาพสูง เช่น แพลตฟอร์มจัดการหอพัก แพลตฟอร์มบริหารสถานศึกษา และแพลตฟอร์ม cloud storage',
+  title: 'PatphonSD',
+  description: 'พัฒนาซอฟต์แวร์และ SaaS ที่ทันสมัยและมีประสิทธิภาพสูง เช่น แพลตฟอร์มจัดการหอพัก แพลตฟอร์มบริหารสถานศึกษา และแพลตฟอร์ม cloud storage',
 }
 
 export default function RootLayout({

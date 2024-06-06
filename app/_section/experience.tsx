@@ -1,6 +1,7 @@
 import Container from "@/components/container";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { DashboardIcon } from "@radix-ui/react-icons";
+import Image from "next/image";
 
 const tools = [
   {
@@ -24,7 +25,7 @@ const tools = [
     name: "STC Plus",
     description: "แอพพลิเคชั่นบริการนักเรียนและผู้ปกครอง",
     link: "https://nextjs.org",
-    image: null,
+    image: "/project/stc-plus.png",
     avatar: "/stc-plus.png",
   },
   {
@@ -52,11 +53,11 @@ const tools = [
     avatar: "/tsr.png",
   },
   {
-    success: false,
+    success: true,
     name: "Air Purifer",
     description: "เครื่องฟอกอากาศ IoT",
     link: "",
-    image: null,
+    image: "/project/purifier.jpg",
     avatar: "/tsr.png",
   },
   {
@@ -77,15 +78,17 @@ export default function Experience() {
         {tools.map((item, idx) => (
           <div
             key={idx}
-            className="bg-neutral-100 flex flex-col rounded-xl shadow-sm transition-all"
+            className="bg-neutral-100 border flex flex-col rounded-xl shadow-sm hover:shadow-lg transition-all"
           >
             <div>
               {
-                item.image ? <img
-                className="rounded-t-lg aspect-[2.23] object-cover"
-                alt={item.name}
-                src={item.image}
-              /> : <div className="rounded-t-lg bg-gradient-to-r from-violet-600 to-indigo-600 aspect-[2.23] object-cover"/>
+                item.image ? <Image
+                  width={1920}
+                  height={1080}
+                  className="rounded-t-lg aspect-video object-cover overflow-hidden"
+                  alt={item.name}
+                  src={item.image}
+                /> : <div className="rounded-t-lg aspect-video bg-gradient-to-r from-violet-600 to-indigo-600 object-cover" />
               }
             </div>
             <div className="flex justify-between px-4">

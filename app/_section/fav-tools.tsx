@@ -10,12 +10,6 @@ const tools = [
     image: "/next.svg",
   },
   {
-    name: "Vercel",
-    type: "app hosting",
-    link: "https://vercel.com",
-    image: "/vercel.png",
-  },
-  {
     name: "TypeScript",
     type: "programming language",
     link: "https://typescriptlang.org",
@@ -26,18 +20,6 @@ const tools = [
     type: "programming language",
     link: "https://cplusplus.com/",
     image: "/cpp.svg",
-  },
-  {
-    name: "NodeJS",
-    type: "JavaScript Runtime",
-    link: "https://nodejs.org/en",
-    image: "/nodejs.svg",
-  },
-  {
-    name: "PNPM",
-    type: "package manager",
-    link: "https://pnpm.io/",
-    image: "/pnpm.png",
   },
   {
     name: "TailwindCSS",
@@ -68,7 +50,7 @@ export default function FavoriteTools() {
           <Link
             href={item.link}
             key={idx}
-            className="bg-neutral-100 flex justify-between rounded-xl shadow-sm hover:shadow-lg transition-all p-4"
+            className="bg-neutral-100 border flex justify-between rounded-xl shadow-sm hover:shadow-lg transition-all p-4"
           >
             <div>
               <p>{item.name}</p>

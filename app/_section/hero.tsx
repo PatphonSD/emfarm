@@ -53,7 +53,7 @@ const HeroMock = () => (
   <div className="grid grid-cols-1 gap-2">
     <div className="bg-blue-950 rounded-2xl object-bottom object-cover h-36 md:h-52 w-full">
       <Image
-        loading="eager"
+       
         className="rounded-2xl object-bottom object-cover h-full"
         src={Mock04}
         alt="dnewuifhn"
@@ -61,23 +61,23 @@ const HeroMock = () => (
     </div>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
       <div className="bg-red-950 rounded-2xl h-36 md:h-52 w-full overflow-hidden">
-        <Image loading="eager" src={Mock01} alt="dnewuifhn" />
+        <Image src={Mock01} alt="dnewuifhn" />
       </div>
       <div className="bg-orange-950 rounded-2xl h-36 md:h-52 w-full overflow-hidden">
-        <Image loading="eager" src={Mock03} alt="dnewuifhn" />
+        <Image src={Mock03} alt="dnewuifhn" />
       </div>
     </div>
     <div className="flex gap-2">
       <div className="bg-green-950 rounded-2xl h-36 md:h-52 aspect-square w-auto overflow-hidden">
         <Image
-          loading="eager"
+         
           src={Mock05}
           className="h-full aspect-square object-cover w-auto"
           alt="dnewuifhn"
         />
       </div>
       <div className="bg-violet-950 rounded-2xl h-36 flex-1 md:h-52 w-full overflow-hidden">
-        <Image loading="eager" className="h-full object-cover" src={Mock02} alt="dnewuifhn" />
+        <Image className="h-full object-cover" src={Mock02} alt="dnewuifhn" />
       </div>
     </div>
   </div>

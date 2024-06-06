@@ -27,7 +27,7 @@ export default function Navbar() {
           href={"/"}
           className={clsx("font-semibold text-xl", urbanist.className)}
         >
-          emfarm.space
+          PatphonSD
         </Link>
         <div className="hidden md:block">
           {navbarLink.map((item, idx) => (

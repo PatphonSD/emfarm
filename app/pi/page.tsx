@@ -103,7 +103,7 @@ export default function PersonalInformation() {
                     ระดับประกาศนียบัตรวิชาชีพ
                   </p>
                   <p className="text-lg font-medium">วิทยาลัยเทคนิคสุรินทร์</p>
-                  <h3>เกรดเฉลี่ยสะสม 3.77</h3>
+                  <h3>เกรดเฉลี่ยสะสม 3.79</h3>
                 </div>
               </div>
             </div>
